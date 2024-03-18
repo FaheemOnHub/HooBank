@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="hooBank" className="w-[124px] h-[32px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((map, index) => {
+        {navLinks.map((map) => {
           return (
             <li
               key={map.id}
@@ -29,7 +29,20 @@ const Navbar = () => {
           className={`${
             toggle ? "flex" : "hidden"
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-        ></div>
+        >
+          <ul className="list-none flex flex-col justify-end items-center flex-1">
+            {navLinks.map((map) => {
+              return (
+                <li
+                  key={map.id}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] text-white mb-4`}
+                >
+                  <a href={`#${map.id}`}>{map.title}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   );
