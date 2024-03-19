@@ -1,4 +1,5 @@
 import styles from "./style";
+
 import {
   Navbar,
   CardDeal,
@@ -27,8 +28,13 @@ const App = () => {
 
       <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
-          <Stats /> <Business /> <CardDeal /> <Testimonials />
-          <Clients /> <CTA /> <Footer />
+          <Stats />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Business />
         </div>
       </div>
     </div>
