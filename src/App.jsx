@@ -10,6 +10,7 @@ import {
   Footer,
   Testimonials,
   Hero,
+  Billing,
 } from "./components";
 const App = () => {
   return (
@@ -35,6 +36,16 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <Business />
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Billing />
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+          <CardDeal />
         </div>
       </div>
     </div>
