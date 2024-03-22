@@ -1,5 +1,3 @@
-import styles from "../style";
-
 const button = ({ styles }) => {
   return (
     <button
